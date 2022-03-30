@@ -1,0 +1,24 @@
+<ul class='navbar'>
+    <li>
+        <a 
+            routerLink='/' 
+            [class.hidden__off]='isActive'
+            (click)='onLunchTymeHandle()'>
+            <img 
+                src='../../assets/img/ic_webBack@2x.png' 
+                alt='Go home :)'/>
+        </a>
+    </li>
+    <li>
+        <a routerLink='/'>
+            <p (click)='onLunchTymeHandle()'>Lunch Tyme</p>
+        </a>
+    </li>
+    <li>
+        <a routerLink='/locations' (click)='onLocationHandle()'>
+            <img 
+            src='../../assets/img/icon_map@2x.png' 
+            alt='Locations ins the map'/>
+        </a>
+    </li>
+</ul>

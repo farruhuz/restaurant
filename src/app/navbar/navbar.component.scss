@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  padding: 1.5rem 1.5rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      p {
+        font-family: "AvenirNext-DemiBold";
+        font-size: 1.7rem;
+        color: var(--text-color);
+      }
+      img{
+          width: 70%;
+          height: 100%;
+          object-fit: cover;
+      }
+    }
+  }
+}
+.hidden__off{
+    visibility: hidden;
+    pointer-events: none;
+}
+

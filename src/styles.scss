@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+/******************
+    GLOBAL STYLES
+******************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/******************
+    REUSABLE STYLES
+******************/
+:root{
+    --nav-bg-color:#43E895;
+    --text-color:#fff;
+}
+@font-face {
+    font-family: 'AvenirNext-DemiBold';
+    src: url('./assets/fonts/AvenirNext-DemiBold.ttf');
+}

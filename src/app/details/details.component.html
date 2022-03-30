@@ -1,0 +1,15 @@
+<ul class="list">
+    <li 
+        *ngFor="let restaurant of restaurantsArr" 
+        class='list'>
+        <div class="list__img">
+            <img  [src]='restaurant.backgroundImageURL' [alt]='restaurant.category'>
+            
+        </div>
+        <div class="label">
+            <div class="food__name">{{restaurant.name}}</div>
+            <div class="food__type">{{restaurant.category}}</div>
+        </div>
+        <p></p>
+    </li>
+</ul>
