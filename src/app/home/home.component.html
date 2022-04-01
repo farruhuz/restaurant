@@ -1,3 +1,11 @@
-<div class="home">
-    <app-details></app-details>
-</div>
+<ul class="list">
+    <li *ngFor="let restaurant of restaurantsArr" class='list'>
+        <a (click)='onItemHandle(restaurant)' routerLink='/details'>
+            <img [src]='restaurant.backgroundImageURL' [alt]='restaurant.category'>
+            <div class="label">
+                <div class="food food__name">{{restaurant.name}}</div>
+                <div class="food food__type">{{restaurant.category}}</div>
+            </div>
+        </a>
+    </li>
+</ul>

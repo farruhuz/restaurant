@@ -8,14 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   constructor() { }
-  isActive: boolean = true;
-  ngOnInit(): void {
-  }
-  onLocationHandle(){
-    this.isActive = false;
-    console.log("hi I put"); 
-  }
-  onLunchTymeHandle(){
-    this.isActive = true;
-  }
+
+  ngOnInit(): void { }
 }

@@ -1,15 +1,16 @@
-<ul class="list">
-    <li 
-        *ngFor="let restaurant of restaurantsArr" 
-        class='list'>
-        <div class="list__img">
-            <img  [src]='restaurant.backgroundImageURL' [alt]='restaurant.category'>
-            
-        </div>
-        <div class="label">
-            <div class="food__name">{{restaurant.name}}</div>
-            <div class="food__type">{{restaurant.category}}</div>
-        </div>
-        <p></p>
-    </li>
-</ul>
+<div class="onceRestaurantsLcation">
+    <div class="map-responsive">
+        <iframe src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+    </div>
+    <div class="title">
+        <h1>{{restaurant?.name}}</h1>
+        <span>{{restaurant.category}}</span>
+    </div>
+    <div class="info">
+        <p>{{restaurant.location.address}}</p>
+        <p>{{restaurant.contact.formattedPhone}}</p>
+        <p>{{"@ " + restaurant.contact.twitter}}</p>
+    </div>
+</div>

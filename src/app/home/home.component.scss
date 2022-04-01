@@ -1,0 +1,54 @@
+.list{
+  animation: item-restaurants 0.5s cubic-bezier(0.40, 0.600, 0.600, 1) both;
+    display:flex;
+    flex-wrap: wrap;
+    li{
+      position: relative;
+      width:33.3%;
+      img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+      }
+    }
+}
+@keyframes item-restaurants {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  
+  .label{
+    position: absolute;
+    bottom: 0;
+    left: 1.2rem;
+    .food{
+      font-family: 'AvenirNext-DemiBold';
+      color: var(--text-color);
+      margin-bottom: 0.6rem;
+    }
+    .food__name{
+      font-size: 1.6rem;
+    }
+    food__type{
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .list{
+      li{
+        width: 50%;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .list{
+      li{
+        width: 100%;
+      }
+    }
+  }
