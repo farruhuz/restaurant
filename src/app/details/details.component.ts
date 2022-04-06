@@ -15,7 +15,6 @@ export class DetailsComponent implements OnInit {
     // Home componentdan RestaurantsSrevice ga berib yuborilgan
     // Restaurants objecti olinib ozidagi o'zgaruvchiga assign qlindi
     this.restaurant = this.itemRestaurantsSvc.gettingRestaurant;
-    // console log should not be committed. Try to learn to debug in the browser.
     console.log(this.restaurant);
   }
 }
